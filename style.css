@@ -1,53 +1,80 @@
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
-body{
-    background : #0d2438 !important;
+
+body {
+    background: #0d2438 !important;
+    margin: 0;
+    padding: 0;
 }
 
-
-h1{
+/* Typography */
+h1, h2, h5 {
     color: #7a858f !important;
     font-weight: bold !important;
-
 }
 
-h5{
+h5 {
     font-family: 'Pacifico', cursive;
 }
-.icon{
-    height:70px
-}
 
-p{
+p {
     font-family: "AvertaStd-Regular";
+    letter-spacing: 1px;
+    line-height: 28px;
 }
 
-.font{
+.font {
     font-family: 'Balsamiq Sans', cursive;
 }
 
-.i{
+/* Images */
+.icon {
+    height: 70px;
+}
+
+.i, .h {
     height: 30px;
-    margin-top:  -18px;
+    margin-top: -18px;
     fill: #fff;
 }
 
-
-.h{
-    height: 10px;
-    margin-top:  -18px;
-    fill: #fff;
-}
-.text-justify{
-    letter-spacing: 2px;
-    line-height: 32px;
-}
-.blockquote-footer{
-    font-size: 20px !important;
+.text-justify {
+    text-align: justify;
 }
 
-.card {
-    margin: 0 auto; /* Added */
-    float: none; /* Added */
-    margin-bottom: 10px; /* Added */
-    border :none
+/* Make images fully responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Mobile scaling tweaks */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .col-lg-6.mt-5 {
+        margin-top: 10px !important;
+        text-align: center;
+    }
+
+    p {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    nav img {
+        width: 140px;
+    }
+}
+
+@media (max-width: 576px) {
+    h2 {
+        font-size: 22px;
+    }
+
+    p {
+        line-height: 24px;
+    }
 }
